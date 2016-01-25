@@ -28,8 +28,17 @@ exports.send = function(req, res, data) {
 		req.response.meta.statusCode = 'OK';
 	}
 
-	req.response.data = data;
+	if (data) {
+		req.response.data = data;
+	}
 
 	reqlog.info('responseBuilder.send.success', req.response);
 	res.end(JSON.stringify(req.response));
+};
+
+exports.error = function(req, res, errorCode) {
+	reqlog.info('responseBuilder.errorFound', errorCode);
+
+	req.response.meta.statusCode = errorCode;
+	this.send(req, res);
 };
