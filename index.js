@@ -2,6 +2,10 @@ var reqlog = require('reqlog');
 
 // initialize the responseBuilder to create the basic structure of the response
 exports.init = function(req, res, next) {
+	res.setHeader('Access-Control-Allow-Origin', '*');
+	res.setHeader('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
+	res.setHeader('Access-Control-Allow-Headers',
+		'Origin, X-Requested-With, Content-Type, Accept');
 	res.setHeader('Content-Type', 'application/json');
 
 	// save the basic structure on the req.response
