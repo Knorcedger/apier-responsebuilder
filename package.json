@@ -1,0 +1,29 @@
+{
+  "name": "apier-responsebuilder",
+  "description": "Builds and sends the response of apier.",
+  "version": "1.0.0",
+  "author": "Knorcedger",
+  "bugs": "https://github.com/Knorcedger/apier-responsebuilder",
+  "dependencies": {
+    "reqlog": "^1.1.3"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3",
+    "eslint-config-google": "^0.3.0"
+  },
+  "homepage": "https://github.com/Knorcedger/apier-responsebuilder",
+  "keywords": [
+    "api",
+    "apier",
+    "response",
+    "responsebuilder"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/Knorcedger/apier-responsebuilder"
+  },
+  "scripts": {
+    "test": "eslint index.js"
+  }
+}
