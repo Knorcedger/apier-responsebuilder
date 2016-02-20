@@ -10,6 +10,40 @@ Download node at [nodejs.org](http://nodejs.org) and install it, if you haven't 
 npm install apier-responsebuilder --save
 ```
 
+## API
+
+### init()
+
+Used as middleware to initialize the response (that we will send at the end)
+
+### send(req, res, data)
+
+#### req
+
+Type: `Object` The request object
+
+#### res
+
+Type: `Object` The response object
+
+#### data
+
+Type: `any` The data to send as response
+
+### error(req, res, errorCode)
+
+#### req
+
+Type: `Object` The request object
+
+#### res
+
+Type: `Object` The response object
+
+#### errorCode
+
+Type: `String` The errorCode to send as response
+
 ## Tests
 
 ```sh
